@@ -54,6 +54,7 @@
 - error graphql data - person not found at site_drive
 
   ![yarn drive:site dev](./screenshots/person-not-found.png 'person xxx not found')
+
   to fix it:
 
   - go to the site_drive browser network tab, pick the the idToken
@@ -79,6 +80,7 @@
 - error schema not available at http://localhost:5000/graphiql
 
   ![yarn graphile:service dev](./screenshots/error-no-shema-available.png 'schema not available on gui')
+
   to fix it:
 
   - go to the front_end browser network tab, pick the the idToken. put that idToken to the gui "headers". Headers format is `{ "Authorization": "Bearer {idToken}"}`
@@ -89,7 +91,8 @@
 - `@srv/strapi-transform` cannot be run without ZeroTier setting
 
   ![yarn graphile:service dev](./screenshots/error-strapi.png 'schema not available on gui')
-  to fix it: setup ZeroTier
+
+    to fix it: setup ZeroTier
 
 # CURRENT STATUS
 
