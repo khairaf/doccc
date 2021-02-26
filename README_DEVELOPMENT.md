@@ -52,6 +52,7 @@
   `"include": ["*.ts", "*.tsx"]` to `"include": ["*.ts"]`
 
 - error graphql data - person not found at site_drive
+
   ![yarn drive:site dev](./screenshots/person-not-found.png 'person xxx not found')
   to fix it:
 
