@@ -46,6 +46,7 @@
 # COMMON ERRORS
 
 - error codegen
+
   ![yarn graphql build:dev](./screenshots/codegen-error-ts3056.png 'codegen error')
   to fix it: go to packages/graphql/tsconfig.json, change:
   `"include": ["*.ts", "*.tsx"]` to `"include": ["*.ts"]`
@@ -75,18 +76,22 @@
   - refresh site_drive page
 
 - error schema not available at http://localhost:5000/graphiql
+
   ![yarn graphile:service dev](./screenshots/error-no-shema-available.png 'schema not available on gui')
   to fix it:
 
   - go to the front_end browser network tab, pick the the idToken. put that idToken to the gui "headers". Headers format is `{ "Authorization": "Bearer {idToken}"}`
   - another way to get the idToken is by go to http://localhost:4000/altair browser network tab
+
     ![yarn graphile:service dev](./screenshots/how-to-get-idToken.png 'schema not available on gui')
 
 - `@srv/strapi-transform` cannot be run without ZeroTier setting
+
   ![yarn graphile:service dev](./screenshots/error-strapi.png 'schema not available on gui')
   to fix it: setup ZeroTier
 
 # CURRENT STATUS
 
 - `@srv/other-api` cannot be run because AssertionError like below
+
   ![AssertionError](./screenshots/error-from-other-api.png 'AssertionError')
